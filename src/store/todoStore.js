@@ -5,8 +5,9 @@ export const useTodoStore = create((set, get) => ({
 
   addTask: (text) => {
     if (!text.trim()) return;
+    
     const newTask = {
-      id: Date.now(),
+      id: new Date().getTime(),
       title: text,
       completed: false,
     };
