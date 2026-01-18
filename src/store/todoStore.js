@@ -29,9 +29,9 @@ export const useTodoStore = create((set, get) => ({
   },
 
   clearCompleted: () => {
-    const tasks = get().tasks;
-    if (tasks.some((t) => t.completed)) {
-      set({ tasks: tasks.filter((t) => !t.completed) });
-    }
-  },
+    set((state) => ({
+    tasks: state.tasks.filter((task) => !task.completed),
+  }));
+},
+
 }));
