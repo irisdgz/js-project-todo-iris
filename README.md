@@ -6,5 +6,5 @@ Mark tasks as completed and undo completion
 Remove tasks
 See how many tasks are remaining
 Clear all completed tasks
-Responsive design (works from mobile to large screens)
+Responsive design 
 Accessible UI following basic accessibility guidelines
